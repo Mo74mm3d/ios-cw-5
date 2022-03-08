@@ -11,6 +11,7 @@ struct ContentView: View {
     var body: some View {
         VStack{
         HStack{
+            ZStack{
             VStack{
                 HStack{
             Image("dogecoin")
@@ -24,16 +25,16 @@ struct ContentView: View {
             }
             VStack{
                 HStack{
-        Text("iOS_Memes")
-                        .font(.title)
-            .fontWeight(.bold)
                     Spacer()
-                        .frame(width:35)
+                        .frame(width:105)
+        Text("iOS_Memes")
+                        .font(.largeTitle)
+            .fontWeight(.bold)
                 }
                 Spacer()
                     .frame(height:50)
             }
-
+            }
         }
             HStack{
             Image("meme1")
